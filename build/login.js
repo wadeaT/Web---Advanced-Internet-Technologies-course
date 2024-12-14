@@ -1,7 +1,7 @@
 // login.js
 const THEME_KEY = "eth-wallet-theme";
 
-// Enhanced features array with more detailed information and icons
+//features array with detailed information and icons
 const features = [
   {
     title: "Buy/Sell Tokens",
@@ -499,7 +499,7 @@ function createTokenCard(token) {
         </div>
     `;
 
-  // Add hover effect for token cards
+  //hover effect for token cards
   tokenElement.addEventListener("mouseenter", () => {
     gsap.to(tokenElement, {
       scale: 1.05,
@@ -572,7 +572,7 @@ function setupEventListeners() {
     });
   });
 
-  // Add scroll-based navbar transparency
+  // scroll-based navbar transparency
   window.addEventListener("scroll", () => {
     const navbar = document.querySelector("nav");
     if (window.scrollY > 50) {
@@ -622,7 +622,7 @@ function initializeTheme() {
   const currentTheme = localStorage.getItem(THEME_KEY) || "dark";
   document.documentElement.classList.toggle("dark", currentTheme === "dark");
 
-  // Add theme transition
+  //theme transition
   document.documentElement.classList.add("transition-colors", "duration-200");
 }
 
@@ -639,5 +639,5 @@ function debounce(func, wait) {
   };
 }
 
-// Export necessary functions
+// Export functions
 export { showLogin, initializeTheme, features, tokenIds };

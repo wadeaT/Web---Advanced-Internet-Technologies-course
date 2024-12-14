@@ -4,5 +4,5 @@ export function showSettings(container) {
         <!-- Settings HTML here -->
     `;
     container.innerHTML = settingsHtml;
-    // Additional settings setup and event listeners
+
 }

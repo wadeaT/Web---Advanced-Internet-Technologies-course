@@ -235,7 +235,7 @@ function showError(form, message) {
     const connectBtn = form.querySelector('#connectBtn');
     connectBtn.parentNode.insertBefore(errorDiv, connectBtn);
 
-    // Remove error after 3 seconds
+    // Remove error after 3 sec
     setTimeout(() => {
         errorDiv.remove();
     }, 3000);

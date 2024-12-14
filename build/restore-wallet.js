@@ -160,7 +160,7 @@ function initializeRestoreWallet() {
     restoreBtn.addEventListener('click', () => {
         const phrase = phraseInput.value.trim();
         console.log('Restoring wallet with phrase:', phrase);
-        // TODO: Add actual wallet restoration logic here
+        // add actual wallet restoration logic here
     });
 }
 

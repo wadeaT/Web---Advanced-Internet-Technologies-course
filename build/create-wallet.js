@@ -409,7 +409,6 @@ function initializeAnimations() {
 }
 
 function showRecoveryPhrase(container) {
-    // This function will be implemented separately for the recovery phrase step
     console.log('Showing recovery phrase...');
     // Here you would typically navigate to the recovery phrase page
     window.dispatchEvent(new CustomEvent('navigate', { 

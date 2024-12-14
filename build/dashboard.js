@@ -203,7 +203,7 @@ function setupEventListeners() {
   // Logout handler
   UIElements.logoutBtn?.addEventListener('click', handleLogout);
 
-  // Handle click outside sidebar on mobile
+  // Handle click outside sidebar
   document.addEventListener('click', handleClickOutside);
 }
 
@@ -318,7 +318,7 @@ function renderOverviewSection() {
   `;
 }
 
-// More section renderers (send, receive, swap, etc.) would go here...
+
 
 // Mock API calls
 async function fetchAssets() {
